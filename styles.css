@@ -1,0 +1,32 @@
+/* Puts all info into a visible block */
+.block {
+  background-color: white;
+  opacity: .8;
+  color: #550080;
+  padding: 50px;
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 15px;
+  padding-bottom: 2%;
+  font-family: 'Unkempt', cursive;
+  
+}
+
+.shadow {
+-moz-box-shadow: inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 10px #000000;
+}
+
+/* Give the background a solid color */
+body {
+  background-color: purple;
+}
+
+/* Style the labels for the user info*/
+p {
+  font-size: 30px;
+}
+
+

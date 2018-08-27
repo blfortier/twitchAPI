@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Twitch JSON API</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!-- Link for a Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Unkempt" rel="stylesheet">
+</head>
+
+<body>
+    <!-- A container to hold the information-->
+    <div class="container-fluid" style="background-color: #660099;">
+        <!-- Display an image of the Twitch TV logo across the top-->
+        <section class="home-hero" style="background-image: url(https://i2.wp.com/www.supermanhomepage.com/clickandbuilds/SupermanHomepage/wp-content/uploads/2018/05/twitch.jpg?ssl=1); height: 300px; background-size: cover; background-position-x: 50%; background-position-y: center;"></section>
+
+        <!-- Display whether Free Code Camp (FCC) is streaming and provide a clickable link that sends the user to FCC's channel on Twitch TV-->
+        <div style="text-align: center; padding: 20px; margin-bottom: 50px;" class="block shadow">
+            <div><img style="height: 150px; width: auto;" src="https://static-cdn.jtvnw.net/jtv_user_pictures/freecodecamp-profile_image-d9514f2df0962329-300x300.png" alt="FCC Logo" href="#"></div>
+            <a href="https://www.twitch.tv/freecodecamp" target="_blank">
+                <h3 >Free Code Camp<span id="fccStatus"></span></h3>
+            </a>
+        </div>
+
+        <!-- Display a user's uername, status, and which game they are playing -->
+        <div class="block shadow" style="background-color: white;">
+            <div class="row" style="text-align: center;">
+                <div class="col-sm-4" id="userName">
+                    <p style="color: #550080; text-decoration: none;">User:</p>
+                </div>
+                <div class="col-sm-4" id="userStatus">
+                    <p>Status:</p>
+                </div>
+                <div class="col-sm-4" id="currentGame">
+                    <p>Currently Playing:</p>
+                </div>
+            </div>
+        </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
